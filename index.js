@@ -61,10 +61,6 @@ lang = ind //language
 enter = '\n'
 
 moment.tz.setDefault("Asia/Jakarta").locale("id");
-//exif
-
-const Exif = require('./lib/exif')
-const exif = new Exif()
 
 module.exports = alpha = async (alpha, m, chatUpdate) => {
     try {
@@ -143,7 +139,7 @@ module.exports = alpha = async (alpha, m, chatUpdate) => {
 
         // Push Message To Console
         if (m.message) {
-            console.log(chalk.black(chalk.bgWhite('| m |')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('| FROM |'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> in'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
+            console.log(chalk.black(chalk.bgWhite('| MSG |')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('| FROM |'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> in'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
         }
         // Function
         const sendFileFromUrl = async (from, url, caption, mek, men) => {
@@ -329,7 +325,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     + `ORG:Owner ${botname};\n` // the organization of the contact
                     + `TEL;type=CELL;type=VOICE;waid=${ownernomer}:${ownernomerr}\n`
                     + 'END:VCARD'
-                alpha.sendMessage(m.chat, { contacts: { displayName: 'R-bot', contacts: [{ vcard }] } }, { quoted: m })
+                alpha.sendMessage(m.chat, { contacts: { displayName: 'R-BOT-MD.', contacts: [{ vcard }] } }, { quoted: m })
             }
             break
             case 'rules':
@@ -388,14 +384,6 @@ m.reply(`Reply Image/Video Dengan Caption ${prefix + command}\n\n*Note*: _Durasi
 }
 
 break
-case 'exif':
-        if (!m.key.fromMe && !isCreator) throw mess.owner
-		const exifff = `${args.join(' ')}`
-	    const namaPack = exifff.split('|')[0]
-    	const authorPack = exifff.split('|')[1]
-	    exif.create(namaPack, authorPack)
-	    await reply('Done gan')
-				break
 case 'mp4': case 'ytmp4':
                 if (!q) return m.reply(lang.wrongFormat(prefix))
                 if (!isUrl(q)) return m.reply(lang.wrongFormat(prefix))
