@@ -357,23 +357,37 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 					sendFileFromUrl(m.chat, data.url, mess.sukses, m)
 					})
 					break
-case 'sticker': case 's': case 'stickergif': case 'sgif': {
-		if (!quoted) throw `Balas Video/Image Dengan Caption ${prefix + command}`
-		m.reply(lang.wait())
-                if (/image/.test(mime)) {
-		    let media = await quoted.download()
-		    let encmedia = await alpha.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
-		    await fs.unlinkSync(encmedia)
-		} else if (/video/.test(mime)) {
-		    if ((quoted.m || quoted).seconds > 11) return m.reply('Maksimal 10 detik!')
-		    let media = await quoted.download()
-		    let encmedia = await hisoka.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
-		    await fs.unlinkSync(encmedia)
-		} else {
-            	    throw `Kirim Gambar/Video Dengan Caption ${prefix + command}\nDurasi Video 1-9 Detik`
-        	}
-	    }
-	    break
+case 'sticker': case 'stiker': case 's': case 'stik':
+try {
+if (!quoted) return m.reply(`Reply Image/Video Dengan Caption ${prefix + command}\n\n*Note*: _Durasi Sticker Video/Gif 1-9 Detik_`)
+if (!/image/.test(mime) && !/video/.test(mime)) return m.reply(`Reply Image/Video Dengan Caption ${prefix + command}\n\n*Note*: _Durasi Sticker Video/Gif 1-9 Detik_`)
+let media = await alpha.downloadAndSaveMediaMessage(quoted)
+await ffmpeg(`${media}`)
+.input(media)
+.on('start', function (cmd) {
+console.log(`STARTED : ${cmd}`)
+})
+.on('error', function (err) {
+console.log(`ERROR : ${err}`)
+fs.unlinkSync(media)
+})
+.on('end', function () {
+console.log(`FINISH`)
+exec(`webpmux -set exif ./sticker/data.exif ./sticker/${sender}.webp -o ./sticker/${sender}.webp`, async (error) => {
+        		if (error) return m.reply(lang.err())
+alpha.sendMessage(from, {sticker: fs.readFileSync(`./sticker/${sender}.webp`)}, {quoted: m})
+fs.unlinkSync(media)
+fs.unlinkSync(`./sticker/${sender}.webp`)
+})
+})
+.addOutputOptions([`-vcodec`,`libwebp`,`-vf`,`scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse`])
+.toFormat('webp')
+.save(`./sticker/${sender}.webp`)
+} catch {
+m.reply(`Reply Image/Video Dengan Caption ${prefix + command}\n\n*Note*: _Durasi Sticker Video/Gif 1-9 Detik_`)
+}
+
+break
 case 'exif':
         if (!m.key.fromMe && !isCreator) throw mess.owner
 		const exifff = `${args.join(' ')}`
