@@ -61,6 +61,9 @@ lang = ind //language
 enter = '\n'
 
 moment.tz.setDefault("Asia/Jakarta").locale("id");
+//exif
+
+const exif = new Exif()
 
 module.exports = alpha = async (alpha, m, chatUpdate) => {
     try {
