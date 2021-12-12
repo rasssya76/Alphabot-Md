@@ -384,6 +384,14 @@ m.reply(`Reply Image/Video Dengan Caption ${prefix + command}\n\n*Note*: _Durasi
 }
 
 break
+case 'exif':
+         if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+		const exifff = `${args.join(' ')}`
+	    const namaPack = exifff.split('|')[0]
+    	const authorPack = exifff.split('|')[1]
+	    exif.create(namaPack, authorPack)
+	    await reply('Done gan')
+				break
 case 'mp4': case 'ytmp4':
                 if (!q) return m.reply(lang.wrongFormat(prefix))
                 if (!isUrl(q)) return m.reply(lang.wrongFormat(prefix))
