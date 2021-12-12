@@ -385,7 +385,7 @@ m.reply(`Reply Image/Video Dengan Caption ${prefix + command}\n\n*Note*: _Durasi
 
 break
 case 'exif':
-         if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+        if (!m.key.fromMe && !isCreator) throw mess.owner
 		const exifff = `${args.join(' ')}`
 	    const namaPack = exifff.split('|')[0]
     	const authorPack = exifff.split('|')[1]
