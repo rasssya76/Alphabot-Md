@@ -82,8 +82,10 @@ exports.notNum = (q) => {
 
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname} 😖*
-*⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+╭─❒ 「 INGFO 」 ❒
+├ *⌚Time Server : ${time}*
+├ *Browser : Chorme*
+╰❒
 
 ╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}owner
@@ -197,6 +199,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ My Parents
 ├ Fatih A.
 ├ Ferdi
+├ Rama :v
 ├ DikaArdnt
 ├ Mhankbarbar
 ├ Nurutomo
@@ -253,7 +256,7 @@ Recode : https://github.com/zeeoneofc/Alphabot-Md
 
 Untuk tutorial penginstalan kalian bisa tonton
 video terbaru di playlist ini.
-https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa9S3P8yfla_d9w-2-
+https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa93P8yfla_d9w-2-
 `
 }
 exports.tos = (ownernomer) => {
@@ -262,7 +265,7 @@ exports.tos = (ownernomer) => {
 
 Hai 👋
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
-🏧 0887435047326 (OVO/Dana/GoPay)
+🏧 081515589573 (OVO/Dana/GoPay)
 
 Berapapun donasi kalian akan sangat berarti 👍
 
