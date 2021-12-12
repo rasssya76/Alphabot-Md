@@ -143,7 +143,7 @@ module.exports = alpha = async (alpha, m, chatUpdate) => {
 
         // Push Message To Console
         if (m.message) {
-            console.log(chalk.black(chalk.bgWhite('| MSG |')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('| FROM |'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> in'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
+            console.log(chalk.black(chalk.bgWhite('| m |')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('| FROM |'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> in'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
         }
         // Function
         const sendFileFromUrl = async (from, url, caption, mek, men) => {
@@ -365,7 +365,7 @@ case 'sticker': case 's': case 'stickergif': case 'sgif': {
 		    let encmedia = await alpha.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 		    await fs.unlinkSync(encmedia)
 		} else if (/video/.test(mime)) {
-		    if ((quoted.msg || quoted).seconds > 11) return m.reply('Maksimal 10 detik!')
+		    if ((quoted.m || quoted).seconds > 11) return m.reply('Maksimal 10 detik!')
 		    let media = await quoted.download()
 		    let encmedia = await hisoka.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 		    await fs.unlinkSync(encmedia)
