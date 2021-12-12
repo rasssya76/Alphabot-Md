@@ -2,9 +2,9 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 // Other
-global.owner = ["62887435047326","62887435047326"]
-global.packname = 'ZeeoneOfc'
-global.youtube = 'https://youtube.com/c/ZeeoneOfc'
+global.owner = ["6281515589573","43670306128550"]
+global.packname = 'R-BOT'
+global.youtube = 'https://youtube.com/c/RamaGans'
 global.author = '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
