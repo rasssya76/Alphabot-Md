@@ -295,6 +295,35 @@ alpha.relayMessage(anu, buatpesan.message, { messageId: buatpesan.key.id })
                 m.reply('Sukses Ganti Ke Mode Self')
             }
             break
+            case 'bcgc': case 'bc': case 'broadcast': {
+                
+            if (!isCreator) throw mess.owner
+                
+            let getGroups = await alpha.groupFetchAllParticipating()
+                
+            let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
+                
+            let anu = groups.map(v => v.id)
+                
+            cc = await smsg(alpha, text ? m : m.quoted ? await m.quoted.fakeObj : false || m)
+               
+            cck = text ? text : cc.text
+                
+            m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 1.5} detik`)
+                
+            for (let i of anu) {
+                    
+            await sleep(1500)
+                   
+            await alpha.copyNForward(i, alpha.cMod(m.chat, cc, /bc|broadcast|bcgc/i.test(cck) ? cck : `「 *R-BOT-MD Broadcast* 」\n\n ${cck}`), true).catch(_ => _)
+                
+            }
+                
+            m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
+                
+            }
+               
+            break
             case 'ping': case 'botstatus': case 'statusbot': {
                 let timestamp = speed()
                 let latensi = speed() - timestamp
