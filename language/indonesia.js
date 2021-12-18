@@ -84,7 +84,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname} 😖*
 ╭─❒ 「 INGFO 」 ❒
 ├ *⌚Time Server : ${time}*
-├ *Browser : Chorme*
+├  *Browser : Chorme*
 ╰❒
 
 ╭─❒ 「 Bot Info 」 ❒
@@ -100,6 +100,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ $ exec
 ├ => exec
 ├ ${prefix}join [link]
+├ ${prefix}bc
 ├ ${prefix}self
 ├ ${prefix}public [only bot]
 ├ ${prefix}del [pesan bot]
