@@ -359,8 +359,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐿𝑖𝑠𝑡 𝑐𝑜𝑚𝑚𝑎𝑛𝑑",
-"id": 'command'
+              "displayText": "𝑨𝒍𝒍 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -698,12 +698,12 @@ var but = [
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐿𝑖𝑠𝑡 𝑐𝑜𝑚𝑚𝑎𝑛𝑑",
-"id": 'command'
+              "displayText": "𝑨𝒍𝒍 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
-        await alpha.send5ButLoc(from, lang.menunya(salam, pushname) , `© ${ownername}`,pp_bot, but )
+        await alpha.send5ButLoc(from, lang.menunya(salam, pushname, prefix) , `© ${ownername}`,pp_bot, but )
         break
 case 'ownercmd': case'ownermenu':
  var ownercmd = await getBuffer(flaming+'Owner Menu')
@@ -735,8 +735,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -772,8 +772,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -809,8 +809,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -846,8 +846,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -883,8 +883,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -920,8 +920,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -957,8 +957,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -994,8 +994,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -1031,8 +1031,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -1068,8 +1068,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
@@ -1106,8 +1106,8 @@ case 'ownercmd': case'ownermenu':
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
+              "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
+"id": 'allmenu'
             }
           }
         ]
