@@ -82,7 +82,7 @@ exports.videoLimit = () => {
 exports.notNum = (q) => {
     return `"${q}", bukan angka!`
 }
-exports.menunya = (salam, pushname) =>{
+exports.menunya = (salam, pushname, prefix) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 
 saya R-BOT-Md, bot ini adalah Beta Multi-Device Whatsapp. 
 
