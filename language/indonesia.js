@@ -1,16 +1,16 @@
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return `_*SABAR NGAB SEDANG LOADING........*_`
 }
 
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `*HARUS TERIMA KASIH*`
 }
 
 exports.err = () => {
-    return `⚠️ Fitur Sedang Error`
+    return `Error sedang di perbaiki`
 }
 exports.erorLink = () => {
-    return `⚠️ Link nya error`
+    return `Link lu error cuy`
 }
 exports.media = () => {
     return `Silahkan pilih media yang ingin kamu download`
@@ -20,7 +20,7 @@ exports.replyImg = (prefix, command) => {
 }
 
 exports.wrongFormat = (prefix) => {
-    return `Format salah ❎ Silakan cek cara penggunaan di *${prefix}allmenu*.`
+    return `Lah coba lu lihat lagi di *${prefix}allmenu*.`
 }
 
 exports.emptyMess = () => {
@@ -32,19 +32,19 @@ exports.cmdNotFound = (cmd, prefix) => {
 }
 
 exports.ownerOnly = () => {
-    return `❎ Command ini khusus Owner!`
+    return `Lu bukan master ku`
 }
 
 exports.doneOwner = () => {
-    return `✅  ️Sudah selesai, Owner ~`
+    return `SUCCES MASTER`
 }
 
 exports.groupOnly = () => {
-    return `👥  Command ini hanya bisa digunakan di dalam grup!`
+    return `Ga bisa di pc ,kalo di grup baru bisa`
 }
 
 exports.adminOnly = () => {
-    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
+    return `*Lu bukan admin cuy*`
 }
 
 exports.nhFalse = () => {
@@ -72,11 +72,11 @@ exports.botNotAdmin = () => {
 exports.received = (pushname) => {
     return `
 Halo ${pushname}!
-Terima kasih telah melapor, laporanmu akan kami segera terima.`
+Terima kasih telah melapor, laporanmu akan kami segera terima. , *laporan main main tidak di terima*`
 }
 
 exports.videoLimit = () => {
-    return `Ukuran file terlalu besar!`
+    return `FIle Terlalu besar`
 }
 
 exports.notNum = (q) => {
@@ -84,15 +84,15 @@ exports.notNum = (q) => {
 }
 exports.menunya = (salam, pushname) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya Alphabot-Md, bot ini adalah Beta Multi-Device Whatsapp. 
+saya R-BOT-Md, bot ini adalah Beta Multi-Device Whatsapp. 
 Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
 lapor owner agar segera di perbaiki 🙏      
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
-    return `*Selamat ${salam} ${pushname} 😖*
-*⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+    return `*Selamat ${salam} ${pushname}*
+*Time Server : ${time}*
+*List-Menu R-BOTxMd :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -456,6 +456,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ My Parents
 ├ Fatih A.
 ├ Ferdi
+├ RamaGans
 ├ DikaArdnt
 ├ Mhankbarbar
 ├ Nurutomo
@@ -487,7 +488,7 @@ Sanksi: *PERMANENT BLOCK*
 ➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
 
 🗯️ Boleh saya menambah ke grup?
-➡️ Untuk sementara bot dalam status free to add.
+➡️ Silahkan tanya ke owner untuk info yg lebih jelas.
 
 🗯️ Prefixnya apa ya?
 ➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
@@ -498,30 +499,30 @@ Sanksi: *PERMANENT BLOCK*
 
 Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
 
-⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
+⚠️ Segala kebijakan dan ketentuan R-BOT di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
 
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan Alphabot
+Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan R-BOT
 😖🙏
 `
 }
 exports.welcome = () =>{
-	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
+	return_*`INTRO JIR*_
 	
-📛 𝖭𝖺𝗆𝖺 :
-🔞 𝖴𝗆𝗎𝗋 :
-🧑 𝖦𝖾𝗇𝖽𝖾𝗋 :
-🏙️ 𝖠𝗌𝗄𝗈𝗍 :
-╰ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
+*𝖭𝖺𝗆𝖺 :*
+*𝖴𝗆𝗎𝗋 :*
+*𝖦𝖾𝗇𝖽𝖾𝗋 :*
+*𝖠𝗌𝗄𝗈𝗍 :*
+
+-*JANGAN NGELANGGAR AUTURAN GRUP YAK*`
 }
 exports.leave = () =>{
-	return`Yah kok out 😣 Mental aman kan kak >.<
-Goodbye`
+	return`KOK OUT NI ORANG`
 }
 exports.source = () =>{
 return`*── 「 SOURCE 」 ──*
 
 Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://github.com/zeeoneofc/Alphabot-Md
+Recode : https://github.com/
 `
 }
 exports.tos = (ownernomer) => {
@@ -918,6 +919,7 @@ exports.tqto = () =>{
 • Ferdi
 • DikaArdnt
 • Mhankbarbar
+• RamaGans
 • Nurutomo
 • Rashid
 • ZeeoneOfc
