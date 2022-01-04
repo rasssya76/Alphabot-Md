@@ -360,7 +360,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 {
             "quickReplyButton": {
               "displayText": "𝑨𝒍𝒍 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -699,7 +699,7 @@ var but = [
 {
             "quickReplyButton": {
               "displayText": "𝑨𝒍𝒍 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -736,7 +736,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -773,7 +773,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -810,7 +810,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -847,7 +847,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -884,7 +884,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -921,7 +921,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -958,7 +958,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -995,13 +995,13 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
         await alpha.send5ButLoc(from, lang.ranime(prefix) , `© ${ownername}`,ranimecmd, but )
         break 
-        case 'othercmd': case 'orhermenu':
+        case 'othercmd': case 'othermenu':
  var othercmd = await getBuffer(flaming+'Others Menu')
  var but = [
           {
@@ -1032,7 +1032,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -1069,7 +1069,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]
@@ -1107,7 +1107,7 @@ case 'ownercmd': case'ownermenu':
 {
             "quickReplyButton": {
               "displayText": "𝑩𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆𝒏𝒖",
-"id": 'allmenu'
+"id": 'menu'
             }
           }
         ]

@@ -4,12 +4,12 @@ const setting = JSON.parse(fs.readFileSync('./setting.json'));
 
 // Other
 global.owner = ["6281515589573","6281515589573"]
-global.packname = 'RAMA々G么NS 亗'
+global.packname = ''
 global.youtube = 'https://cutt.ly/5UFQN1L'
 global.author = '© R-BOT MD'
 global.sessionName = 'session'
 global.flaming = "https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text="
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.prefa = ['','!','.','🐦','🐤','🗿','#','/','@','&','^','_',',']
 global.sp = '⭔'
 global.mess = {
     sukses: '*HARUS TERIMA KASIH*',
