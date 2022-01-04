@@ -86,30 +86,30 @@ exports.menunya = (salam, pushname, prefix) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 
 saya R-BOT-Md, bot ini adalah Beta Multi-Device Whatsapp. 
 
-   _*LIST MENU*_
+      𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔
    
-❒ *${prefix}ownermenu*
+❒ *${prefix}ᴏᴡɴᴇʀᴍᴇɴᴜ*
 
 
-❒ *${prefix}groupmenu*
+❒ *${prefix}ɢʀᴏᴜᴘᴍᴇɴᴜ*
 
 
-❒ *${prefix}convertmenu*
+❒ *${prefix}ᴄᴏɴᴠᴇʀᴛᴍᴇɴᴜ*
 
 
-❒ *${prefix}animemenu*
+❒ *${prefix}ᴀɴɪᴍᴇᴍᴇɴᴜ*
 
 
-❒ *${prefix}searchmenu*
+❒ *${prefix}sᴇᴀʀᴄʜᴍᴇɴᴜ*
 
 
-❒ *${prefix}textpromenu*
+❒ *${prefix}ᴛᴇxᴛᴘʀᴏᴍᴇɴᴜ*
 
 
-❒ *${prefix}orhermenu*
+❒ *${prefix}ᴏᴛʜᴇʀᴍᴇɴᴜ*
 
 
-❒ *${prefix}tqto*    
+❒ *${prefix}ᴛǫᴛᴏ*    
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
