@@ -117,14 +117,14 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 *Time Server : ${time}*
 *List-Menu R-BOTxMd :*
 
-╭─❒ *INFO*
+┏❒ *INFO*
 ├ ${prefix}owner
 ├ ${prefix}rules
 ├ ${prefix}botstatus
-╰❒ ${prefix}donate
+┗❒ ${prefix}donate
 
 
-┏❒ 「 Owner 」 
+┏❒「 Owner  」❒ 
 ┃ < evaluate
 ┃ > evaluate
 ┃ $ exec
@@ -134,9 +134,9 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ┃ ${prefix}self
 ┃ ${prefix}public [only bot]
 ┃ ${prefix}del [pesan bot]
-┗❒ ${prefix}setppbot [reply image]
-
-┏❒ 「 Group 」 
+┃ ${prefix}setppbot [reply image]
+┃
+┃ ❒「 Group  」❒ 
 ┃ ${prefix}revoke
 ┃ ${prefix}leave
 ┃ ${prefix}add [62***]
@@ -146,16 +146,16 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ┃ ${prefix}linkgc
 ┃ ${prefix}group [open/close]
 ┃ ${prefix}tagall [text]
-┗❒ ${prefix}hidetag [text]
-
-┏❒ 「 Anime 」 
+┃ ${prefix}hidetag [text]
+┃
+┃ ❒「 Anime  」❒ 
 ┃ ${prefix}quotesanime
 ┃ ${prefix}anime [query]
 ┃ ${prefix}manga [query]
-┗❒ ${prefix}character [query]
-
-
-┏❒ 「 Search 」 
+┃ ${prefix}character [query]
+┃
+┃
+┃ ❒「 Search  」❒ 
 ┃ ${prefix}ytsearch [query]
 ┃ ${prefix}film [query]
 ┃ ${prefix}wallpaper [query]
@@ -164,18 +164,18 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ┃ ${prefix}wattpad [query]
 ┃ ${prefix}webtoons [query]
 ┃ ${prefix}drakor [query]
-┗❒ ${prefix}pinterest [query]
-
-
-┏❒ 「 Converter 」 
+┃ ${prefix}pinterest [query]
+┃
+┃
+┃ ❒「 Converter  」❒ 
 ┃ ${prefix}stiker [reply image]
 ┃ ${prefix}tourl [image/video]
 ┃ ${prefix}togif [sticker]
 ┃ ${prefix}tomp4 [sticker]
-┗❒${prefix}toimg [reply sticker]
-
-
-┏❒ 「 Image Effect 」 
+┃${prefix}toimg [reply sticker]
+┃
+┃
+┃ ❒「 Image Effect  」❒ 
 ┃ ${prefix}wanted [reply image]
 ┃ ${prefix}utatoo [reply image]
 ┃ ${prefix}unsharpen [reply image]
@@ -228,10 +228,10 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ┃ ${prefix}greyscale [reply image]
 ┃ ${prefix}threshold [reply image]
 ┃ ${prefix}brightness [reply image]
-┗❒ ${prefix}invertgreyscale [reply image]
-
-
-┏❒ 「 Download 」 
+┃ ${prefix}invertgreyscale [reply image]
+┃
+┃
+┃ ❒「 Download  」❒ 
 ┃ ${prefix}tiktok [link]
 ┃ ${prefix}tiktoknowm [link]
 ┃ ${prefix}tiktokwm [link]
@@ -250,10 +250,10 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ┃ ${prefix}igvideo [link]
 ┃ ${prefix}igreels [link]
 ┃ ${prefix}igtv [link]
-┗❒ ${prefix}twitter link
-
-
-┏❒ 「 Random Anime 」
+┃ ${prefix}twitter link
+┃
+┃
+┃ ❒「 Random Anime  」❒
 ┃ ${prefix}loli
 ┃ ${prefix}neko
 ┃ ${prefix}waifu
@@ -284,9 +284,9 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ┃ ${prefix}wink
 ┃ ${prefix}poke
 ┃ ${prefix}dance
-┗❒ ${prefix}cringe
-
-┏❒ 「 Textpro Menu 」
+┃ ${prefix}cringe
+┃
+┃ ❒「 Textpro Menu  」❒
 ┃ ${prefix}halloween2 text|text2
 ┃ ${prefix}horror text|text2
 ┃ ${prefix}game8bit text|text2
@@ -466,15 +466,15 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ┃ ${prefix}3dchrome text
 ┃ ${prefix}metalb2 text
 ┃ ${prefix}metalg text
-┗❒ ${prefix}metalg text
-
-
-┏❒ *Others*
+┃ ${prefix}metalg text
+┃
+┃
+┃.  *Others* 
 ┃ ${prefix}kalkulator
 ┃ ${prefix}ttp [text]
-┗❒ ${prefix}attp [text]
-
-┏❒ *TqTo*
+┃ ${prefix}attp [text]
+┃
+┃ *TqTo*
 ┃ My God
 ┃ My Parents
 ┃ Fatih A.
@@ -529,14 +529,14 @@ Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu 
 `
 }
 exports.welcome = () =>{
-	return`_*INTRO JIR*_
+	return`*INTRO JIR*
 	
 *𝖭𝖺𝗆𝖺 :*
 *𝖴𝗆𝗎𝗋 :*
 *𝖦𝖾𝗇𝖽𝖾𝗋 :*
 *𝖠𝗌𝗄𝗈𝗍 :*
 
--*JANGAN NGELANGGAR ATURAN GRUP YAK*`
+*JANGAN NGELANGGAR ATURAN GRUP YAK*`
 }
 exports.leave = () =>{
 	return`KOK OUT NI ORANG,ADA APA YAK?`
