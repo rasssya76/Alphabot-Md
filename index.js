@@ -704,8 +704,6 @@ var but = [
           }
         ]
         await alpha.send5ButLoc(from, lang.menunya(salam, pushname, prefix) , `© ${ownername}`,pp_bot, but )
-        lima = fs.readFileSync('./help.mp3');
-        alpha.sendMessage(from, lima, MessageType.audio, {quoted: m, mimetype: 'audio/mp4', ptt:true})
         break
 case 'ownercmd': case'ownermenu':
  var ownercmd = await getBuffer(flaming+'Owner Menu')
