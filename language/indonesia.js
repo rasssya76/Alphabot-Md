@@ -624,7 +624,7 @@ Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu 
 `
 }
 exports.welcome = () =>{
-	return`𝐈𝐍𝐓𝐑𝐎 𝐊𝐀𝐊 (•̀ᴗ•́)و
+	return`𝐈𝐍𝐓𝐑𝐎 𝐊𝐀𝐊 (●’◡’●)ﾉ
 	
 ┏❒𝖭𝖺𝗆𝖺 :
 ┃ 𝖴𝗆𝗎𝗋 :
@@ -634,7 +634,7 @@ exports.welcome = () =>{
  `
 }
 exports.leave = () =>{
-	return`kok out sayang (;´༎ຶٹ༎ຶ`)`
+	return`kok out sayang (´༎ຶٹ༎ຶ)`
 }
 exports.source = () =>{
 return`*── 「 SOURCE 」 ──*
