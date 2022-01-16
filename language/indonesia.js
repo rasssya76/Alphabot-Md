@@ -85,7 +85,7 @@ exports.videoLimit = () => {
 exports.notNum = (q) => {
     return `"${q}", bukan angka!`
 }
-exports.menunya = (salam, pushname) =>{
+exports.menunya = (salam, pushname, prefix) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 
 
       𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔
