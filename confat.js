@@ -15,7 +15,7 @@ global.mess = {
     sukses: '🤗Done, Oke Desu~',
     admin: 'Perintah Ini Hanya Bisa Digunakan Oleh Admin !',
     botAdmin: 'Perintah Ini Hanya Bisa Digunakan Ketika Bot Menjadi Admin !',
-    owner: 'Perintah Ini Hanya Bisa Digunakan Oleh Owner !',
+    owner: 'Perintah Ini Hanya isa Digunakan Oleh Owner !',
     group: 'Perintah Ini Hanya Bisa Digunakan Di Group !',
     private: 'Perintah Ini Hanya Bisa Digunakan Di Private !',
 	bot: 'Fitur Khusus Pengguna Nomor Bot',
