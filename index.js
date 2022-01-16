@@ -790,7 +790,7 @@ var but = [
             }
           }
         ]
-        await alpha.send5ButLoc(from, lang.menunya(salam, pushname) , `© ${ownername}`,pp_bot, but )
+        await alpha.send5ButLoc(from, lang.menunya(salam, pushname, prefix) , `© ${ownername}`,pp_bot, but )
         }
         if(typemenu == 'templateTenor'){
          but = [
@@ -826,7 +826,7 @@ var but = [
             }
           }
         ]
-         alpha.send5ButGif(from, lang.menunya(salam, pushname) , `© ${ownername}` ,pp_bot, but , {quoted: m})
+         alpha.send5ButGif(from, lang.menunya(salam, pushname, prefix) , `© ${ownername}` ,pp_bot, but , {quoted: m})
          }
         } else {
 var but = [
