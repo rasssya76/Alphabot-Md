@@ -1,5 +1,5 @@
 exports.wait = () => {
-    return `_*SABAR NGAB SEDANG LOADING........*_`
+    return `              _*LOADING.......*_`
 }
 
 exports.ok = () => {
