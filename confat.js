@@ -6,7 +6,7 @@ const setting = JSON.parse(fs.readFileSync('./setting.json'));
 global.owner = ["6281515589573","6281515589573"]
 global.packname = 'R-BOTxMdོ'
 global.youtube = 'https://cutt.ly/5UFQN1L'
-global.author = 'i'm Rama 々/>'
+global.author = "i'm Rama 々/>"
 global.sessionName = 'session'
 global.flaming = "https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text="
 global.prefa = ['','!','.','🐦','🐤','🗿','#','/','@','&','^','_',',']
