@@ -2,11 +2,11 @@ exports.private = () =>{
 	return`Fitur hanya bisa di gunakan di private chat`
 	}
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return `             *Wait*             `
 }
 
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `niceee`
 }
 
 exports.err = () => {
@@ -690,10 +690,10 @@ exports.welcome = () =>{
 *➪* 𝖴𝗆𝗎𝗋 :
 *➪* 𝖦𝖾𝗇𝖽𝖾𝗋 :
 *➪* 𝖠𝗌𝗄𝗈𝗍 :
+`
 }
 exports.leave = () =>{
-	return`Bruhhh out
-Goodbye`
+	return`Lah kok out`
 }
 exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
