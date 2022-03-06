@@ -2,10 +2,11 @@ exports.private = () =>{
 	return`Fitur hanya bisa di gunakan di private chat`
 	}
 exports.wait = () => {
-    return `                      *Otewe*                       `
+    return `⏳ Mohon tunggu sebentar~`
 }
+
 exports.ok = () => {
-    return `OKEH`
+    return `✅ Done. Ok desu~`
 }
 
 exports.err = () => {
@@ -38,7 +39,7 @@ exports.ownerOnly = () => {
 }
 
 exports.doneOwner = () => {
-    return `Sudah selesai, Owner ~`
+    return `✅  ️Sudah selesai, Owner ~`
 }
 
 exports.groupOnly = () => {
@@ -54,7 +55,7 @@ exports.nhFalse = () => {
 }
 
 exports.listBlock = (blockNumber) => {
-    return `*── 「 HALL OF SHAME  ──*
+    return `*── 「 HALL OF SHAME 」 ──*
     
 Total diblokir: *${blockNumber.length}* user\n`
 }
@@ -84,18 +85,16 @@ exports.videoLimit = () => {
 exports.notNum = (q) => {
     return `"${q}", bukan angka!`
 }
-exports.menunya = (salam, pushname, botname) =>{
+exports.menunya = (salam, pushname) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya ${botname}, Bot ini akan selalu on tapi ketika bot ini off ber arti bot ini 
-telah terblokir 😓    
+saya R-BOT-Md, bot ini adalah Beta Multi-Device Whatsapp. 
+Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
+lapor owner agar segera di perbaiki 🙏      
 `
 }
-exports.listMenu = (time, salam, pushname, prefix, readmore) => {
+exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
-*Time Server : ${time}*
-*List-Menu R-BOT-Md :*
-
- Bot Info  
+ 「 Bot Info 」 
 *➪* ${prefix}owner
 *➪* ${prefix}rules
 *➪* ${prefix}sc
@@ -103,11 +102,9 @@ exports.listMenu = (time, salam, pushname, prefix, readmore) => {
 *➪* ${prefix}runtime
 *➪* ${prefix}botstatus
 *➪* ${prefix}donate
-${readmore}
 
-[*LIST MENU*]
 
- Owner  
+ 「 Owner 」 
 *➪* < evaluate
 *➪* > evaluate
 *➪* $ exec
@@ -115,10 +112,6 @@ ${readmore}
 *➪* ${prefix}setmenu [query]
 *➪* ${prefix}setmenu templateLocation
 *➪* ${prefix}setmenu templateTenor
-*➪* ${prefix}setmenu katalog
-*➪* ${prefix}setmenu katalog2
-*➪* ${prefix}setmenu list
-*➪* ${prefix}setwm packname|author
 *➪* ${prefix}sendsesi
 *➪* ${prefix}listpc
 *➪* ${prefix}listgc
@@ -135,7 +128,7 @@ ${readmore}
 *➪* ${prefix}setppbot [reply image]
 
 
- Database  
+ 「 Database 」 
 *➪* ${prefix}setcmd [reply stiker]
 *➪* ${prefix}delcmd [reply stiker]
 *➪* ${prefix}listcmd
@@ -149,10 +142,9 @@ ${readmore}
 *➪* ${prefix}delmsg [nama file]
 
 
- Group  
+ 「 Group 」 
 *➪* ${prefix}listonline
 *➪* ${prefix}sider
-*➪* ${prefix}wm packname|author
 *➪* ${prefix}infochat
 *➪* ${prefix}setdesk [text]
 *➪* ${prefix}setppgrup [reply image]
@@ -163,30 +155,29 @@ ${readmore}
 *➪* ${prefix}kick @tag
 *➪* ${prefix}leave
 *➪* ${prefix}linkgc
-*➪* ${prefix}take packname|author
 *➪* ${prefix}group [open/close]
 *➪* ${prefix}tagall [text]
 *➪* ${prefix}hidetag [text]
 
- Anime  
+ 「 Anime 」 
 *➪* ${prefix}quotesanime
 *➪* ${prefix}anime [query]
 *➪* ${prefix}manga [query]
 *➪* ${prefix}character [query]
 
- Tag  
+ 「 Tag 」 
 *➪* ${prefix}stickertag
 *➪* ${prefix}videotag [query]
 *➪* ${prefix}vntag [query]
 *➪* ${prefix}imagetag [query]
 
- Stalking  
+ 「 Stalking 」 
 *➪* ${prefix}igstalk [username]
 *➪* ${prefix}ghstalk [username]
 *➪* ${prefix}ytstalk [channel]
 
 
- Search  
+ 「 Search 」 
 *➪* ${prefix}ytsearch [query]
 *➪* ${prefix}wallpaper [query]
 *➪* ${prefix}wikimedia [query]
@@ -197,18 +188,15 @@ ${readmore}
 *➪* ${prefix}pinterest [query]
 
 
- Converter 
-*➪* ${prefix}toaudio [video]
-*➪* ${prefix}tomp3 [video]
-*➪* ${prefix}tovn [video]
+ 「 Converter 」 
 *➪* ${prefix}stiker [reply image]
-*➪* ${prefix}tourl [image/video/stiker]
+*➪* ${prefix}tourl [image/video]
 *➪* ${prefix}togif [sticker]
 *➪* ${prefix}tomp4 [sticker]
 *➪*${prefix}toimg [reply sticker]
 
 
- Image Effect  
+ 「 Image Effect 」 
 *➪* ${prefix}wanted [reply image/stiker]
 *➪* ${prefix}utatoo [reply image/stiker]
 *➪* ${prefix}unsharpen [reply image/stiker]
@@ -245,7 +233,7 @@ ${readmore}
 *➪* ${prefix}beautiful [reply image/stiker]
 
 
- Sticker Effect  
+ 「 Sticker Effect 」 
 *➪* ${prefix}jail [reply image/stiker]
 *➪* ${prefix}red [reply image/stiker]
 *➪* ${prefix}gay [reply image/stiker]
@@ -267,7 +255,7 @@ ${readmore}
 *➪* ${prefix}invertgreyscale [reply image/stiker]
 
 
- Download  
+ 「 Download 」 
 *➪* ${prefix}tiktok [link]
 *➪* ${prefix}tiktoknowm [link]
 *➪* ${prefix}tiktokwm [link]
@@ -294,39 +282,8 @@ ${readmore}
 *➪* ${prefix}mediafire [link]
 *➪* ${prefix}twitter link
 
- Primbon 
-*➪* ${prefix}nomorhoki 887435047326
-*➪* ${prefix}artimimpi [query]
-*➪* ${prefix}artinama [query]
-*➪* ${prefix}ramaljodoh
-*➪* ${prefix}ramaljodohbali
-*➪* ${prefix}suamiistri
-*➪* ${prefix}ramalcinta
-*➪* ${prefix}cocoknama
-*➪* ${prefix}pasangan
-*➪* ${prefix}jadiannikah
-*➪* ${prefix}sifatusaha
-*➪* ${prefix}rezeki
-*➪* ${prefix}pekerjaan
-*➪* ${prefix}nasib
-*➪* ${prefix}penyakit
-*➪* ${prefix}tarot
-*➪* ${prefix}fengshui
-*➪* ${prefix}haribaik
-*➪* ${prefix}harisangar
-*➪* ${prefix}harisial
-*➪* ${prefix}nagahari
-*➪* ${prefix}arahrezeki
-*➪* ${prefix}peruntungan
-*➪* ${prefix}weton
-*➪* ${prefix}karakter
-*➪* ${prefix}keberuntungan
-*➪* ${prefix}memancing
-*➪* ${prefix}masasubur
-*➪* ${prefix}zodiak 
-*➪* ${prefix}shio [query]
 
- Random Anime 
+ 「 Random Anime 」
 *➪* ${prefix}loli
 *➪* ${prefix}neko
 *➪* ${prefix}waifu
@@ -359,7 +316,7 @@ ${readmore}
 *➪* ${prefix}dance
 *➪* ${prefix}cringe
 
- Nsfw & Sfw 
+ 「 Nsfw & Sfw 」
 *➪* ${prefix}ahegao
 *➪* ${prefix}ass
 *➪* ${prefix}bdsm
@@ -439,7 +396,7 @@ ${readmore}
 *➪* ${prefix}cuddle
 *➪* ${prefix}zettai
 
- Textpro Menu 
+ 「 Textpro Menu 」
 *➪* ${prefix}halloween2 text|text2
 *➪* ${prefix}horror text|text2
 *➪* ${prefix}game8bit text|text2
@@ -622,7 +579,7 @@ ${readmore}
 *➪* ${prefix}metalg text
 
 
- Others 
+ 「 Others 」
 *➪* ${prefix}afk [reason]
 *➪* ${prefix}translate kode_bahasa text
 *➪* ${prefix}kalkulator [query]
@@ -631,7 +588,7 @@ ${readmore}
 *➪* ${prefix}memegen [text|text]
 *➪*
 
- Game Menu 
+ 「 Game Menu 」
 *➪* ${prefix}kuismath
 *➪* ${prefix}tebak [option]
 *➪* ${prefix}tekateki
@@ -639,7 +596,7 @@ ${readmore}
 *➪* ${prefix}caklontong
 
 
- Asupan Menu 
+ 「 Asupan Menu 」
 *➪* ${prefix}chika
 *➪* ${prefix}delvira
 *➪* ${prefix}ayu
@@ -663,30 +620,8 @@ ${readmore}
 *➪* ${prefix}ukhty
 *➪* ${prefix}syifa
 
- Telegram Sticker 
-*➪* ${prefix}awoawo
-*➪* ${prefix}benedict
-*➪* ${prefix}chat
-*➪* ${prefix}dbfly
-*➪* ${prefix}dino_kuning
-*➪* ${prefix}doge
-*➪* ${prefix}gojosatoru
-*➪* ${prefix}hope_boy
-*➪* ${prefix}jisoo
-*➪* ${prefix}kr_robot
-*➪* ${prefix}kucing
-*➪* ${prefix}lonte
-*➪* ${prefix}manusia_lidi
-*➪* ${prefix}menjamet
-*➪* ${prefix}meow
-*➪* ${prefix}nicholas
-*➪* ${prefix}patrick
-*➪* ${prefix}popoci
-*➪* ${prefix}sponsbob
-*➪* ${prefix}kawan_sponsbob
-*➪* ${prefix}tyni
-,
- Random Cewe 
+
+ 「 Random Cewe 」
 *➪* ${prefix}china 
 *➪* ${prefix}indonesia 
 *➪* ${prefix}malaysia 
@@ -699,7 +634,7 @@ ${readmore}
 *➪* ${prefix}lisa  
 *➪* ${prefix}rose
 
- TqTo  
+ 「 TqTo 」 
 *➪* My God
 *➪* My Parents
 *➪* Fatih A.
@@ -716,7 +651,7 @@ ${readmore}
 
 exports.rules = (prefix) => {
     return `
-*── 「 RULES AND FAQ  ──*
+*── 「 RULES AND FAQ 」 ──*
 
 1. Jangan spam bot. 🙅
 Sanksi: *❎ WARN/SOFT BLOCK*
@@ -732,9 +667,6 @@ Sanksi: *PERMANENT BLOCK*
 
 🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
 ➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
-
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk sementara bot dalam status free to add.
 
 🗯️ Prefixnya apa ya?
 ➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
@@ -752,28 +684,27 @@ Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu 
 `
 }
 exports.welcome = () =>{
-	return`INTRO BROO
+	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈
 	
- 𝖭𝖺𝗆𝖺 :
- 𝖴𝗆𝗎𝗋 :
- 𝖦𝖾𝗇𝖽𝖾𝗋 :
- 𝖠𝗌𝗄𝗈𝗍 :
-`
+*➪* 𝖭𝖺𝗆𝖺 :
+*➪* 𝖴𝗆𝗎𝗋 :
+*➪* 𝖦𝖾𝗇𝖽𝖾𝗋 :
+*➪* 𝖠𝗌𝗄𝗈𝗍 :
 }
 exports.leave = () =>{
-	return`kok out pasti mau nganu
+	return`Bruhhh out
 Goodbye`
 }
 exports.source = () =>{
-return`*------「 SOURCE CODE  ------*
+return`*------「 SOURCE CODE 」 ------*
 
 Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://youtube.com/playlist?list=PLFCglBzFPH7vSQaa9S3P8yfla_
+Recode : https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa9S3P8yfla_d9w-2-
 `
 }
 exports.tos = (ownernomer) => {
     return `
-*-------「 DONATE  -------*
+*-------「 DONATE 」 -------*
 
 Hai kak ☺️ 
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
@@ -789,7 +720,7 @@ wa.me/${ownernomer}
 }
 
 exports.info = (prefix) =>{
-	return` Bot Info  
+	return` 「 Bot Info 」 
 *➪* ${prefix}owner
 *➪* ${prefix}rules
 *➪* ${prefix}sc
@@ -800,7 +731,7 @@ exports.info = (prefix) =>{
 `}
 
 exports.ownermenu = (prefix) =>{
-return` Owner  
+return` 「 Owner 」 
 *➪* < evaluate
 *➪* > evaluate
 *➪* $ exec
@@ -808,10 +739,6 @@ return` Owner
 *➪* ${prefix}setmenu [query]
 *➪* ${prefix}setmenu templateLocation
 *➪* ${prefix}setmenu templateTenor
-*➪* ${prefix}setmenu katalog
-*➪* ${prefix}setmenu katalog2
-*➪* ${prefix}setmenu list
-*➪* ${prefix}setwm packname|author
 *➪* ${prefix}sendsesi
 *➪* ${prefix}listpc
 *➪* ${prefix}listgc
@@ -829,7 +756,7 @@ return` Owner
 `}
 
 exports.database = (prefix) =>{
-	return` Database  
+	return` 「 Database 」 
 *➪* ${prefix}setcmd [reply stiker]
 *➪* ${prefix}delcmd [reply stiker]
 *➪* ${prefix}listcmd
@@ -844,10 +771,9 @@ exports.database = (prefix) =>{
 `}
 
 exports.group = (prefix) =>{
-	return` Group  
+	return` 「 Group 」 
 *➪* ${prefix}listonline
 *➪* ${prefix}sider
-*➪* ${prefix}wm packname|author
 *➪* ${prefix}infochat
 *➪* ${prefix}setdesk [text]
 *➪* ${prefix}setppgrup [reply image]
@@ -858,14 +784,13 @@ exports.group = (prefix) =>{
 *➪* ${prefix}kick @tag
 *➪* ${prefix}leave
 *➪* ${prefix}linkgc
-*➪* ${prefix}take packname|author
 *➪* ${prefix}group [open/close]
 *➪* ${prefix}tagall [text]
 *➪* ${prefix}hidetag [text]
 `}
 
 exports.anime = (prefix) =>{
-	return` Anime  
+	return` 「 Anime 」 
 *➪* ${prefix}quotesanime
 *➪* ${prefix}anime [query]
 *➪* ${prefix}manga [query]
@@ -873,7 +798,7 @@ exports.anime = (prefix) =>{
 `}
 
 exports.tag = (prefix) =>{
-	return` Tag  
+	return` 「 Tag 」 
 *➪* ${prefix}stickertag
 *➪* ${prefix}videotag [query]
 *➪* ${prefix}vntag [query]
@@ -881,14 +806,14 @@ exports.tag = (prefix) =>{
 `}
 
 exports.stalk = (prefix) =>{
-	return` Stalking  
+	return` 「 Stalking 」 
 *➪* ${prefix}igstalk [username]
 *➪* ${prefix}ghstalk [username]
 *➪* ${prefix}ytstalk [channel]
 `}
 
 exports.search = (prefix) =>{
-	return` Search  
+	return` 「 Search 」 
 *➪* ${prefix}ytsearch [query]
 *➪* ${prefix}wallpaper [query]
 *➪* ${prefix}wikimedia [query]
@@ -900,10 +825,7 @@ exports.search = (prefix) =>{
 `}
 
 exports.converter = (prefix) =>{
-	return` Converter  
-*➪* ${prefix}toaudio [video]
-*➪* ${prefix}tomp3 [video]
-*➪* ${prefix}tovn [video]
+	return` 「 Converter 」 
 *➪* ${prefix}stiker [reply image]
 *➪* ${prefix}tourl [image/video]
 *➪* ${prefix}togif [sticker]
@@ -912,7 +834,7 @@ exports.converter = (prefix) =>{
 `}
 
 exports.effect = (prefix) =>{
-	return` Image Effect  
+	return` 「 Image Effect 」 
 *➪* ${prefix}wanted [reply image/stiker]
 *➪* ${prefix}utatoo [reply image/stiker]
 *➪* ${prefix}unsharpen [reply image/stiker]
@@ -951,7 +873,7 @@ exports.effect = (prefix) =>{
 
 //
 exports.effect2 = (prefix) =>{
-	return` Sticker Effect  
+	return` 「 Sticker Effect 」 
 *➪* ${prefix}jail [reply image/stiker]
 *➪* ${prefix}red [reply image/stiker]
 *➪* ${prefix}gay [reply image/stiker]
@@ -975,7 +897,7 @@ exports.effect2 = (prefix) =>{
 }
 
 exports.download = (prefix) =>{
-return` Download  
+return` 「 Download 」 
 *➪* ${prefix}tiktok [link]
 *➪* ${prefix}tiktoknowm [link]
 *➪* ${prefix}tiktokwm [link]
@@ -1005,7 +927,7 @@ return` Download
 }
 
 exports.ranime = (prefix) =>{
-	return` Random Anime 
+	return` 「 Random Anime 」
 *➪* ${prefix}loli
 *➪* ${prefix}neko
 *➪* ${prefix}waifu
@@ -1041,7 +963,7 @@ exports.ranime = (prefix) =>{
 }
 
 exports.nsfw = (prefix) =>{
-	return` Nsfw & Sfw 
+	return` 「 Nsfw & Sfw 」
 *➪* ${prefix}ahegao
 *➪* ${prefix}ass
 *➪* ${prefix}bdsm
@@ -1124,7 +1046,7 @@ exports.nsfw = (prefix) =>{
 }
 
 exports.textpro = (prefix) =>{
-	return` Textpro Menu 
+	return` 「 Textpro Menu 」
 *➪* ${prefix}halloween2 text|text2
 *➪* ${prefix}horror text|text2
 *➪* ${prefix}game8bit text|text2
@@ -1310,7 +1232,7 @@ exports.textpro = (prefix) =>{
 
 
 exports.other = (prefix) =>{
-return` Others 
+return` 「 Others 」
 *➪* ${prefix}ttp [text]
 *➪* ${prefix}attp [text]
 *➪* ${prefix}afk [reason]
@@ -1322,7 +1244,7 @@ return` Others
 `
 }
 exports.game = (prefix) =>{
-return` Game Menu 
+return` 「 Game Menu 」
 *➪* ${prefix}kuismath
 *➪* ${prefix}tebak [option]
 *➪* ${prefix}tekateki
@@ -1331,7 +1253,7 @@ return` Game Menu
 `
 }
 exports.asupan = (prefix) =>{
-return` Asupan Menu 
+return` 「 Asupan Menu 」
 *➪* ${prefix}chika
 *➪* ${prefix}delvira
 *➪* ${prefix}ayu
@@ -1357,7 +1279,7 @@ return` Asupan Menu
 `
 }
 exports.cecan = (prefix) =>{
-return` Random Cewe 
+return` 「 Random Cewe 」
 *➪* ${prefix}china 
 *➪* ${prefix}indonesia 
 *➪* ${prefix}malaysia 
@@ -1373,7 +1295,7 @@ return` Random Cewe
 }
 
 exports.tqto = () =>{
-	return` TqTo  
+	return` 「 TqTo 」 
 *➪* My God
 *➪* My Parents
 *➪* Fatih A.
@@ -1387,63 +1309,3 @@ exports.tqto = () =>{
 *➪* And All Support
 `
 }
-
-exports.primbonmenu = (prefix) =>{
-	return` Primbon 
-*➪* ${prefix}nomorhoki 887435047326
-*➪* ${prefix}artimimpi [query]
-*➪* ${prefix}artinama [query]
-*➪* ${prefix}ramaljodoh
-*➪* ${prefix}ramaljodohbali
-*➪* ${prefix}suamiistri
-*➪* ${prefix}ramalcinta
-*➪* ${prefix}cocoknama
-*➪* ${prefix}pasangan
-*➪* ${prefix}jadiannikah
-*➪* ${prefix}sifatusaha
-*➪* ${prefix}rezeki
-*➪* ${prefix}pekerjaan
-*➪* ${prefix}nasib
-*➪* ${prefix}penyakit
-*➪* ${prefix}tarot
-*➪* ${prefix}fengshui
-*➪* ${prefix}haribaik
-*➪* ${prefix}harisangar
-*➪* ${prefix}harisial
-*➪* ${prefix}nagahari
-*➪* ${prefix}arahrezeki
-*➪* ${prefix}peruntungan
-*➪* ${prefix}weton
-*➪* ${prefix}karakter
-*➪* ${prefix}keberuntungan
-*➪* ${prefix}memancing
-*➪* ${prefix}masasubur
-*➪* ${prefix}zodiak 
-*➪* ${prefix}shio [query]
-`
-}
-
-exports.stcmenu = (prefix) =>{
-	return` Telegram Sticker 
-*➪* ${prefix}awoawo
-*➪* ${prefix}benedict
-*➪* ${prefix}chat
-*➪* ${prefix}dbfly
-*➪* ${prefix}dino_kuning
-*➪* ${prefix}doge
-*➪* ${prefix}gojosatoru
-*➪* ${prefix}hope_boy
-*➪* ${prefix}jisoo
-*➪* ${prefix}kr_robot
-*➪* ${prefix}kucing
-*➪* ${prefix}lonte
-*➪* ${prefix}manusia_lidi
-*➪* ${prefix}menjamet
-*➪* ${prefix}meow
-*➪* ${prefix}nicholas
-*➪* ${prefix}patrick
-*➪* ${prefix}popoci
-*➪* ${prefix}sponsbob
-*➪* ${prefix}kawan_sponsbob
-*➪* ${prefix}tyni
-`}
